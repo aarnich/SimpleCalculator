@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".assignment"
+    android:orientation="vertical"
+    android:padding="20dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Enter Input Values"
+    android:textSize="@dimen/calcButtonTextSize"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/valOne"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Value 1">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/valTwo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Value 2">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addResult"
+            android:textSize="@dimen/calcButtonTextSize"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subtractResult"
+            android:textSize="@dimen/calcButtonTextSize"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/multiplyResult"
+            android:textSize="@dimen/calcButtonTextSize"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/divideResult"
+            android:textSize="@dimen/calcButtonTextSize"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button android:id="@+id/addBtn"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:text="Add"
+                android:textColor="@color/white"
+                android:onClick="addInputs"/>
+            <Button android:id="@+id/subtractBtn"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+
+                android:text="Subtract"
+                android:onClick="subtractInputs"/>
+            <Button android:id="@+id/multiplyBtn"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+
+                android:layout_width="match_parent"
+                android:text="Multiply"
+                android:onClick="multiplyInputs"/>
+            <Button android:id="@+id/divideBtn"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:text="Divide"
+                android:textColor="@color/white"
+
+                android:onClick="divideInputs"/>
+            <Button android:id="@+id/AllBtn"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:text="All Operations"
+                android:textColor="@color/white"
+
+                android:onClick="doAll"/>
+            <Button android:id="@+id/clearBtn"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:text="Clear"
+                android:textColor="@color/white"
+
+                android:onClick="clearInputs"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
